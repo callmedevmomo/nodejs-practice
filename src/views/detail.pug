@@ -1,0 +1,8 @@
+extends templates/layout
+
+block content
+    h2=movies.title
+    p=movies.synopsis
+    ul
+        each item in movies.genres
+            li=item
